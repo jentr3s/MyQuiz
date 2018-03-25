@@ -14,6 +14,7 @@ function createWindow () {
     slashes: true
   }))
 
+  let server = require('./src/server/server.js');
   // Open the DevTools optionally:
   // win.webContents.openDevTools()
 
