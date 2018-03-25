@@ -8,9 +8,9 @@ import { ElectronService } from 'ngx-electron';
 })
 export class AppComponent {
   title = 'MyQuiz';
-  
-  constructor(private _electronService: ElectronService) {}   // DI
-  
+
+  constructor(private _electronService: ElectronService) { }   // DI
+
   launchQuiz() {
     this._electronService.shell.openExternal('https://youtube.com');
   }
