@@ -11,6 +11,10 @@ export class AppComponent {
   
   constructor(private _electronService: ElectronService) {}   // DI
   
+  launchQuiz() {
+    this._electronService.shell.openExternal('https://youtube.com');
+  }
+
   launchWindow() {
     this._electronService.shell.openExternal('https://youtube.com');
   }
